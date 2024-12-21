@@ -39,6 +39,6 @@ import static ru.be_prog.ApplicationConfiguration.CAR_BRANDS;
 //
 //        assertNotSame(firstPerson, secondPerson, "Тест для Person бина не пройден, проверьте правильность конфигурации бина");
 //        assertNotSame(firstCar, secondCar, "Тест для Person бина не пройден, Car должны быть разными у разных Person, проверьте правильность конфигурации бина");
-//        assertTrue(CAR_BRANDS.contains(firstCar.getModel()), "Тест не пройдет, марка машины не соответствует марке из допустимого списка");
+//        assertTrue(CAR_BRANDS.contains(firstCar.getBrand()), "Тест не пройдет, марка машины не соответствует марке из допустимого списка");
 //    }
 //}
