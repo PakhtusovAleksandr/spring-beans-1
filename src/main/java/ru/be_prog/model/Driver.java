@@ -1,5 +1,6 @@
 package ru.be_prog.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class Driver implements TransportDriver {
 
     private final Transport transport;
-
+    @Autowired
     public Driver(Transport transport) {
         this.transport = transport;
     }

@@ -15,14 +15,13 @@ import java.util.Random;
 @ComponentScan(basePackages = "ru.be_prog")
 public class ApplicationConfiguration {
 
-@Bean(name = "car-models")
-@Scope("prototype")
-public Car getCarModels(){
+    @Bean(name = "car-models")
+    @Scope("prototype")
+    public Car getCarModels(){
         Car bean = new Car();
         bean.setBrand(randomCarBrand());
-                return bean;
-}
-
+        return bean;
+    }
 
     private String randomCarBrand() {
         int randomIndex = new Random().nextInt(CAR_BRANDS.size());
